@@ -1,13 +1,9 @@
-@font-face {
-    font-family: "Futura";
-    src: url("FuturaStd-Light.otf");
-    
-}
-    
+  
 
 body {
     background-color: black;
    text-align: center;
+    font-family: 'Jura', sans-serif;
     
 }
 
