@@ -14,7 +14,7 @@ main {
     margin: auto;
    width: 750px;
     min-height: 700px;
-  
+  font-family: 'Jura', sans-serif;
     
     
 }
@@ -115,7 +115,7 @@ button {
     cursor: pointer;
     display: inline-block;
     background: transparent;
-    font-family: "Futura";
+    font-family: 'Jura', sans-serif;
     font-size: 30px;
     text-decoration: underline;
     
