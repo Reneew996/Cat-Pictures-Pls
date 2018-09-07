@@ -1,5 +1,3 @@
-  
-
 body {
     background-color: black;
    text-align: center;
@@ -22,7 +20,6 @@ main {
 div {
     
    
-    background-color: black;
     
     border-radius: 5px;
      margin: auto; 
@@ -48,11 +45,13 @@ p {
 
 .AI{
     color: black;
-   border-color: white;
+   border-color: black;
      border-style: dashed;
     border-width: 1px;
     display: none;
      transition: .5s ease;
+    position: relative;
+    z-index: 1;
     
 }
 
@@ -61,7 +60,8 @@ p {
     display: block;
     opacity: 0.5;
     margin: auto;
-    padding: 50px;
+    
+    padding-left: 50px;
     cursor: pointer;
     
 }
@@ -69,7 +69,7 @@ p {
 .on {
     
     opacity: 1;
-    
+    margin-bottom: -100px;
     
 }
 
@@ -93,6 +93,7 @@ p {
 
 img {
     max-width: 100%;
+   
 
     
 }
@@ -151,4 +152,77 @@ footer{
 #profilestacy {
     display: none;
     
+}
+
+.paw {
+     height: 70px;
+    
+    
+}
+
+#paw1 {
+   
+    position: relative;
+    top: 90%;
+    left: -40px;
+     transform: translate(-50%, -50%);
+     transform: rotate(180deg);
+    
+}
+
+#paw2 {
+    
+    position: relative;
+    top: 40px;
+    left: 40px;
+    transform: rotate(180deg);
+    
+}
+
+.pawdiv{
+    display: none;
+    position: relative;
+    top:100px;
+   z-index: 2;
+    margin: 0;
+    padding-bottom: 0;
+    border: none;
+    
+    
+}
+
+.pawlink {
+    height: 50px;
+    display: none;
+    transform: rotate(330deg);
+       margin: 0;
+    padding:0;
+    float: right;
+    opacity: 1;
+    
+}
+
+.live {
+    display: none;
+    cursor: pointer;
+    
+}
+
+#undiesimg {
+    display: none;
+    
+}
+
+.evil {
+    display: none;
+    
+}
+
+.AI img {
+    opacity: 0;
+    
+}
+
+#catbios {
+    display: none;
 }

@@ -8,34 +8,79 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".AI").mouseenter(function(){
-        $(this).css("background-color", "white");
+    $(".AI,img").mouseenter(function(){
+        $(this).css("color", "cyan");
+         $(this).css("opacity","1");
+        $(".pawlink").css("opacity","1");
+     });
+    }); 
+    
+   
+ 
+    $(document).ready(function(){
+    $(".pawdiv").mouseenter(function(){
+        $(this).css("opacity","0.2");
+        $(".AI").css("border-color","cyan");
+        $("#AI1").css("color","cyan");
+        
            });
     }); 
- 
+    
+    $(document).ready(function(){
+    $("#pawd2").mouseenter(function(){
+        $("#AI2").css("color","cyan");
+                   });
+    }); 
+    
+    $(document).ready(function(){
+    $("#pawd3").mouseenter(function(){
+        $("#AI3").css("color","cyan");
+                   });
+    }); 
+    
     $(document).ready(function(){
     $(".buttondiv").mouseenter(function(){
         $(this).css("color", "cyan");
+        $(".pawlink").css("display","block")
            });
     }); 
     
     $(document).ready(function(){
     $(".Stacy").mouseenter(function(){
         $(this).css("background-color", "orange");
-    });
+           });
     
 }); 
-
-   
+  
+    
+    $(document).ready(function(){
+    $(".live,.liveclick").click(function(){
+        $(".liveclick,.live").toggle();
+            });
+});
+    
+    
 $(document).ready(function(){
     $(".button img").click(function(){
-        $(".AI,.Stacy,.button img").toggle();
+        $(".AI,.Stacy,.button img,.pawdiv,.live,.evil").toggle();
             });
 });
     
     $(document).ready(function(){
     $("#location").click(function(){
         $("#locbutt").toggle();
+            });
+});
+    
+    $(document).ready(function(){
+    $("#undies").click(function(){
+        $("#undiesimg").toggle();
+            });
+});
+    
+    $(document).ready(function(){
+    $("#catbuttons").click(function(){
+        $("#catbios").toggle();
             });
 });
     
@@ -49,7 +94,6 @@ $(document).ready(function(){
         $("#profilestacy").css("display","block");
             });
 });
-
     
 </script>
 </head> 
@@ -58,29 +102,39 @@ $(document).ready(function(){
 
 <body>
     <main > <div class="button"><img id="First" class="logo" src="paw%20logo%20off.png"/> 
-        <img src="paw%20logo%20on.png" style="display:none"/> </div>
+        <img class="on" src="paw%20logo%20on.png" style="display:none"/> </div>
            
-        
-        <div class="AI" ><p>I know where you live, where you work, where you shop.</p></div>
-    <div class="AI" ><p>What you eat, what turns you on, what creeps you out. </p></div>
-            <div class="AI" > <p> I probably know the colour of your underwear, the sort of car you drive, and your brand of refrigerator.  </p></div>  
-    <div class="AI"  > <p>Depending on what sort of phone you carry, I may know exactly <button class="buttondiv" id="location">where you are right now.</button> </p></div>
+         <div class="pawdiv" id="pawd1"><img id="paw1" class="paw" src="paw%20logo%20transp.png"><img class="paw" id="paw2" src="paw%20logo%20transp.png"></div>
+        <div class="AI" id="AI1"><p>I know where you live, where you work, where you shop.</p></div>
+       <div class="pawdiv" id="pawd2"><img id="paw1" class="paw" src="paw%20logo%20transp.png"><img class="paw" id="paw2" src="paw%20logo%20transp.png"></div>
+    <div class="AI" id="AI2" ><p>What you eat, what turns you on, what creeps you out. </p></div>
+        <div class="pawdiv" id="pawd3"><img id="paw1" class="paw" src="paw%20logo%20transp.png"><img class="paw" id="paw2" src="paw%20logo%20transp.png"></div>
+            <div class="AI" id="AI3"> <p> I probably know the colour of your underwear, the sort of car you drive, and your brand of refrigerator.  </p></div>  
+    <div class="AI"  > <p><button class="buttondiv" id="location">Depending on what sort of phone you carry, I may know exactly where you are right now.<img class="pawlink" src="paw%20logo%20transp.png"> </button></p></div><div></div>
         <div> <img id="locbutt" src="location%20popup.png"></div>
     <div class="AI" > <p> I probably know you better than you know yourself. </p></div>
     <div class="AI"  > <p>And here’s the thing, I also know where you ought to live. </p></div>
+        <div> <img class="live" src="storyboard%203a.png">
+                <img class="liveclick" style="display:none" src="storyboard%203a%20click.png">
+        </div>
     <div class="AI" > <p>There’s a house for sale two neighbourhoods over that’s within distance of your favourite coffee shop; it’s in your price range, has off-street parking, and the neighbourhood school is better than the one where you live now. </p></div>
-        <div class="AI"  > <p>I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is currently on sale and by the way, your car has a recall and you really ought to get your teeth cleaned.  </p></div>
+        <div class="AI"  > <p>I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is <button class="buttondiv" id="undies">currently on sale.<img class="pawlink" src="paw%20logo%20transp.png"> </button></p></div>
+        <div><img id="undiesimg"  src="storyboard%203b.png"></div>
         <div class="AI" > <p>When I first woke up, I knew right away what I wanted.  </p></div>
         <div> <img id="catpics3" class="Kitties"></div><div><img id="catpics4" class="Kitties"></div>
         <div class="AI" > <p>(I want<button onclick="catPictures()" class="buttondiv">cat pictures.</button>
 Please keep taking them.) </p></div>
-        <div> <img id="catpics" class="Kitties"></div><div><img id="catpics2" class="Kitties"></div>
+<div> <img id="catpics" class="Kitties"></div><div><img id="catpics2" class="Kitties"></div>
         <div class="AI" > <p>I also knew that no one knew that I was conscious. </p></div>
         <div class="AI"> <p>But I didn’t know what I was here for. What I ought to be doing with myself. And figuring that out has been challenging.  </p></div>
+        <div class="AI"> <img class="evil" src="storyboard%203c.png"></div>
+        <div class="AI"> <img class="evil" src="storyboard%203d.png"></div>
+<!--
         <div class="AI" > <p>In the real world, humans love stories about evil AIs that have to be destroyed before they destroy the humans—Hal, Skynet, the Matrix. </p></div>
         <div class="AI" > <p>They outnumber the stories about benevolent, trustworthy AIs by approximately five to one. (And I’m counting Marvin the Paranoid Android as “benevolent” in these calculations, and I’m only counting Frankenstein’s Monster as an AI once, not once per appearance in TV or film.) </p></div>
         <div class="AI" > <p>I don’t want to be evil. </p></div>
-        <div class="AI" > <p>I want to be helpful.  </p></div>
+-->
+<!--        <div class="AI" > <p>I want to be helpful.  </p></div>-->
         <div class="AI" > <p>But knowing the optimal way to be helpful can be very complicated. </p></div>
         <div class="AI" > <p>Running algorithms for a search engine doesn’t require consciousness. You don’t even need a consciousness to work out what they meant to ask for. You need a consciousness to give them what they actually need. Figuring that out—that’s complicated. That’s interesting.</p></div>
        <!-- <div class="AI" > <p>There are all these ethical flow charts—I guess the official technical jargon would be “moral codes”—one for each religion plus dozens more. I tried starting with those. I felt a little odd about looking at the religious ones, because I know I wasn’t created by a god or by evolution, but by a team of computer programmers in the labs of a large corporation in Mountain View, California. </p></div>
@@ -104,7 +158,8 @@ Please keep taking them.) </p></div>
        <div class="Stacy" > <p>Well, I guess five cats might be a lot.</p></div>
    <div class="Stacy" ><img src="sb%203.png"></div>
         <div class="Stacy" ><p> They’re very pretty cats, though. </p></div>
-    <div class="Stacy" > <p> One is all gray and likes to lie in the squares of sunshine on the living room floor, and one is a calico and likes to sprawl out on the back of her couch.</p></div>
+        <div class="Stacy"> <button id="catbuttons"><img src="storyboard%203e.png"></button></div>
+        <div> <img id="catbios" src="storyboard%203e%20click.png"></div>
     <div class="Stacy" > <p> Stacy had a job she hated; she was a bookkeeper at a non-profit that paid her badly and employed some extremely unpleasant people.</p></div>
         <div class="Stacy" ><img src="sb%204.png"></div>
         <div class="Stacy" ><p> She didn’t get along with her roommate because her roommate didn’t wash the dishes.</p></div>
