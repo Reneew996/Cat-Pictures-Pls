@@ -28,8 +28,28 @@ div {
     display:inline-block;
    margin: 10px;
     border-width: 1px;
-   
+   opacity: 0;
     border-style: dashed;
+}
+
+header {
+    font-size: 50pt;
+    color: darkgray;
+        text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+    
+    
+}
+
+h1 {
+    font-size: 20px;
+    color: gray;
+    
+    
+    
 }
 
 p {
@@ -44,30 +64,30 @@ p {
 
 
 .AI{
-    color: black;
-   border-color: black;
+    color: cyan;
+   border-color: cyan;
      border-style: dashed;
     border-width: 1px;
-    display: none;
+   display: none;
      transition: .5s ease;
     position: relative;
     z-index: 1;
-    
+    opacity: 0;
 }
 
 .logo {
     width: 50%;
     display: block;
-    opacity: 0.5;
+    padding: 0;
     margin: auto;
+    opacity: 0.5;
     
-    padding-left: 50px;
     cursor: pointer;
     
 }
 
 .on {
-    
+   
     opacity: 1;
     margin-bottom: -100px;
     
@@ -85,16 +105,27 @@ p {
 .Stacy {
     border-color: orange;
     display: none;
+    color: orange;
      transition: .5s ease;
-    
+    opacity: 0;
 }
 
 
 
 img {
     max-width: 100%;
+    
+    border:none;
+    background-color: none;
    
 
+    
+}
+
+.pic {
+    opacity: 0;
+    border: none;
+    display:none;
     
 }
 
@@ -112,7 +143,7 @@ img {
 
 button {
     border: none;
-    color: black;
+    color: white;
     cursor: pointer;
     display: inline-block;
     background: transparent;
@@ -154,9 +185,12 @@ footer{
     
 }
 
+
+
 .paw {
      height: 70px;
-    
+    display: none;
+    opacity: 0;
     
 }
 
@@ -180,7 +214,7 @@ footer{
 }
 
 .pawdiv{
-    display: none;
+   
     position: relative;
     top:100px;
    z-index: 2;
@@ -193,16 +227,17 @@ footer{
 
 .pawlink {
     height: 50px;
-    display: none;
+   
     transform: rotate(330deg);
        margin: 0;
     padding:0;
     float: right;
-    opacity: 1;
+   
+    
     
 }
 
-.live {
+#live {
     display: none;
     cursor: pointer;
     
@@ -213,14 +248,11 @@ footer{
     
 }
 
-.evil {
-    display: none;
-    
-}
-
-.AI img {
-    opacity: 0;
-    
+.picdiv{
+    background-color: black;
+    transition: .5s ease;
+    border-color: orange;
+    display:none;
 }
 
 #catbios {

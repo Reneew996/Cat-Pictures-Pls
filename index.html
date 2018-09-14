@@ -7,62 +7,52 @@
   <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet"> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    $(".AI,img").mouseenter(function(){
-        $(this).css("color", "cyan");
-         $(this).css("opacity","1");
-        $(".pawlink").css("opacity","1");
-     });
+//$(document).ready(function(){
+//    $(".AI,img").mouseenter(function(){
+//        $(this).css("color", "cyan");
+//         $(this).css("opacity","1");
+//        $(".pawlink").css("opacity","1");
+//     });
+//    }); 
+//    
+
+$(window).scroll(function() {
+    $("div,.pic,.pawlink").each( function() {
+        if( $(window).scrollTop() > $(this).offset().top - 500 ) {
+            $(this).css('opacity',1);
+        } else {
+            $(this).css('opacity',0);
+        }
     }); 
+});
+//    
+//    $(document).ready(function(){
+//    $(".buttondiv").mouseenter(function(){
+//        $(this).css("color", "cyan");
+//        $(".pawlink").css("display","block")
+//           });
+//    }); 
     
-   
- 
-    $(document).ready(function(){
-    $(".pawdiv").mouseenter(function(){
-        $(this).css("opacity","0.2");
-        $(".AI").css("border-color","cyan");
-        $("#AI1").css("color","cyan");
-        
-           });
-    }); 
-    
-    $(document).ready(function(){
-    $("#pawd2").mouseenter(function(){
-        $("#AI2").css("color","cyan");
-                   });
-    }); 
-    
-    $(document).ready(function(){
-    $("#pawd3").mouseenter(function(){
-        $("#AI3").css("color","cyan");
-                   });
-    }); 
-    
-    $(document).ready(function(){
-    $(".buttondiv").mouseenter(function(){
-        $(this).css("color", "cyan");
-        $(".pawlink").css("display","block")
-           });
-    }); 
-    
-    $(document).ready(function(){
-    $(".Stacy").mouseenter(function(){
-        $(this).css("background-color", "orange");
-           });
-    
-}); 
+  $(document).ready(function(){
+  $(".picdiv").mouseover(function(){
+      $(this).css("background-color", "white");
   
-    
+     });
+       $(".picdiv").mouseout(function(){
+        $(".picdiv").css("background-color", "black");
+    });
+});
+   
     $(document).ready(function(){
-    $(".live,.liveclick").click(function(){
-        $(".liveclick,.live").toggle();
+    $("#live,#liveclick").click(function(){
+        $("#liveclick,#live").toggle();
             });
 });
     
     
 $(document).ready(function(){
-    $(".button img").click(function(){
-        $(".AI,.Stacy,.button img,.pawdiv,.live,.evil").toggle();
+    $("#First").click(function(){
+        $(".AI,.Stacy,#First,.on,#live,.pic,.paw,header,h1,.picdiv").toggle();
             });
 });
     
@@ -101,34 +91,37 @@ $(document).ready(function(){
 </head>
 
 <body>
-    <main > <div class="button"><img id="First" class="logo" src="paw%20logo%20off.png"/> 
-        <img class="on" src="paw%20logo%20on.png" style="display:none"/> </div>
+    <main > <header>Cat Pictures Please</header>
+        <h1>Written by Naomi Kritzer
+        <br>Adapted by Renee Wells</h1>
+        <img id="First" class="logo" src="paw%20logo%20off.png"/> 
+        <img class="on" onclick="reloadFunction()" src="paw%20logo%20on.png" style="display:none"/> 
            
-         <div class="pawdiv" id="pawd1"><img id="paw1" class="paw" src="paw%20logo%20transp.png"><img class="paw" id="paw2" src="paw%20logo%20transp.png"></div>
-        <div class="AI" id="AI1"><p>I know where you live, where you work, where you shop.</p></div>
-       <div class="pawdiv" id="pawd2"><img id="paw1" class="paw" src="paw%20logo%20transp.png"><img class="paw" id="paw2" src="paw%20logo%20transp.png"></div>
-    <div class="AI" id="AI2" ><p>What you eat, what turns you on, what creeps you out. </p></div>
-        <div class="pawdiv" id="pawd3"><img id="paw1" class="paw" src="paw%20logo%20transp.png"><img class="paw" id="paw2" src="paw%20logo%20transp.png"></div>
-            <div class="AI" id="AI3"> <p> I probably know the colour of your underwear, the sort of car you drive, and your brand of refrigerator.  </p></div>  
+        
+        <div class="AI" ><p>I know where you live, where you work, where you shop.</p></div>
+       
+    <div class="AI"  ><p>What you eat, what turns you on, what creeps you out. </p></div>
+        
+            <div class="AI" > <p> I probably know the colour of your underwear, the sort of car you drive, and your brand of refrigerator.  </p></div>  
     <div class="AI"  > <p><button class="buttondiv" id="location">Depending on what sort of phone you carry, I may know exactly where you are right now.<img class="pawlink" src="paw%20logo%20transp.png"> </button></p></div><div></div>
         <div> <img id="locbutt" src="location%20popup.png"></div>
     <div class="AI" > <p> I probably know you better than you know yourself. </p></div>
     <div class="AI"  > <p>And here’s the thing, I also know where you ought to live. </p></div>
-        <div> <img class="live" src="storyboard%203a.png">
-                <img class="liveclick" style="display:none" src="storyboard%203a%20click.png">
+        <div> <img id="live" class="pic" src="storyboard%203a.png">
+                <img id="liveclick" style="display:none" src="storyboard%203a%20click.png">
         </div>
     <div class="AI" > <p>There’s a house for sale two neighbourhoods over that’s within distance of your favourite coffee shop; it’s in your price range, has off-street parking, and the neighbourhood school is better than the one where you live now. </p></div>
         <div class="AI"  > <p>I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is <button class="buttondiv" id="undies">currently on sale.<img class="pawlink" src="paw%20logo%20transp.png"> </button></p></div>
-        <div><img id="undiesimg"  src="storyboard%203b.png"></div>
+        <div><img id="undiesimg" src="storyboard%203b.png"></div>
         <div class="AI" > <p>When I first woke up, I knew right away what I wanted.  </p></div>
         <div> <img id="catpics3" class="Kitties"></div><div><img id="catpics4" class="Kitties"></div>
-        <div class="AI" > <p>(I want<button onclick="catPictures()" class="buttondiv">cat pictures.</button>
+        <div class="AI" > <p>(I want<button onclick="catPictures()" class="buttondiv">cat pictures.<img class="pawlink" src="paw%20logo%20transp.png"></button>
 Please keep taking them.) </p></div>
 <div> <img id="catpics" class="Kitties"></div><div><img id="catpics2" class="Kitties"></div>
         <div class="AI" > <p>I also knew that no one knew that I was conscious. </p></div>
         <div class="AI"> <p>But I didn’t know what I was here for. What I ought to be doing with myself. And figuring that out has been challenging.  </p></div>
-        <div class="AI"> <img class="evil" src="storyboard%203c.png"></div>
-        <div class="AI"> <img class="evil" src="storyboard%203d.png"></div>
+        <div > <img class="pic" src="storyboard%203c.png"></div>
+        <div > <img class="pic" src="storyboard%203d.png"></div>
 <!--
         <div class="AI" > <p>In the real world, humans love stories about evil AIs that have to be destroyed before they destroy the humans—Hal, Skynet, the Matrix. </p></div>
         <div class="AI" > <p>They outnumber the stories about benevolent, trustworthy AIs by approximately five to one. (And I’m counting Marvin the Paranoid Android as “benevolent” in these calculations, and I’m only counting Frankenstein’s Monster as an AI once, not once per appearance in TV or film.) </p></div>
@@ -154,16 +147,16 @@ Please keep taking them.) </p></div>
         <div> <button id="profile"><img id="loginstacy" src="login%20popup.png"></button></div>
         <div > <img id="profilestacy" src="profile.png"></div>
     <div class="Stacy" > <p>I liked Stacy because she gave me a lot of new cat pictures. Stacy had five cats and a DSLR camera and an apartment that got a lot of good light. That was all fine. </p></div>
-  <div class="Stacy" ><img src="sb%202.png"></div>
+  <div class="picdiv" ><img class="pic" src="sb%202.png"></div>
        <div class="Stacy" > <p>Well, I guess five cats might be a lot.</p></div>
-   <div class="Stacy" ><img src="sb%203.png"></div>
+   <div class="picdiv" ><img src="sb%203.png"></div>
         <div class="Stacy" ><p> They’re very pretty cats, though. </p></div>
         <div class="Stacy"> <button id="catbuttons"><img src="storyboard%203e.png"></button></div>
         <div> <img id="catbios" src="storyboard%203e%20click.png"></div>
     <div class="Stacy" > <p> Stacy had a job she hated; she was a bookkeeper at a non-profit that paid her badly and employed some extremely unpleasant people.</p></div>
-        <div class="Stacy" ><img src="sb%204.png"></div>
+        <div class="picdiv" ><img src="sb%204.png"></div>
         <div class="Stacy" ><p> She didn’t get along with her roommate because her roommate didn’t wash the dishes.</p></div>
-        <div class="Stacy" > <img src="sb%205.png"></div>
+        <div class="picdiv" > <img src="sb%205.png"></div>
     <div class="Stacy" > <p> And really, these were all solvable problems! Depression is treatable, new jobs are findable, and bodies can be hidden. </p></div>
         <div class="Stacy" > <p>(That part about hiding bodies is a joke.)</p></div>
         <div class="Stacy" > <p>I tried tackling this on all fronts. </p></div>
@@ -210,7 +203,9 @@ Please keep taking them.) </p></div>
             
             }
             
-          
+          function reloadFunction(forceGet) {
+    location.reload();
+}
             
             
         </script>
