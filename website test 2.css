@@ -1,7 +1,7 @@
 body {
     background-color: black;
    text-align: center;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Caveat', cursive;
     
 }
 
@@ -12,7 +12,7 @@ main {
     margin: auto;
   
     min-height: 700px;
-  font-family: 'Jura', sans-serif;
+  font-family: 'Caveat', cursive;
    
     
 }
@@ -26,7 +26,7 @@ div {
     border-radius: 5px;
      margin-left:  200px;
     margin-right: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     padding: 20px;
    min-width:100px; 
     display: inline-block;
@@ -57,7 +57,7 @@ h1 {
 }
 
 p {
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     vertical-align: middle;             
      line-height: 30px;                    
@@ -68,15 +68,18 @@ p {
 
 
 .AI{
-    color: cyan;
-   border-color: cyan;
-     border-style: dashed;
-    border-width: 1px;
-   display: none;
+    color: #00F7CE;
+      display: none;
      transition: .5s ease;
     position: relative;
     z-index: 1;
     opacity: 0;
+    border-image-source: url(border%20blu1.png);
+  border-image-slice: 40;
+  border-image-width: 20;
+  border-image-outset: 20;
+  border-image-repeat: stretch;
+    
 }
 
 .logo {
@@ -84,7 +87,7 @@ p {
     display: block;
     padding: 0;
     margin: auto;
-    opacity: 0.5;
+    
     
     cursor: pointer;
     
@@ -93,7 +96,7 @@ p {
 .on {
    
     opacity: 1;
-    margin-bottom: -100px;
+    margin-bottom: 10px;
     
 }
 
@@ -107,11 +110,16 @@ p {
 }
 
 .Stacy {
-    border-color: orange;
+ 
     display: none;
     color: orange;
      transition: .5s ease;
     opacity: 0;
+     border-image-source: url(border%20orThin.png);
+  border-image-slice: 40;
+  border-image-width: 20;
+  border-image-outset: 20;
+  border-image-repeat: round;
 }
 
 
@@ -151,8 +159,8 @@ button {
     cursor: pointer;
     display: inline-block;
     background: transparent;
-    font-family: 'Jura', sans-serif;
-    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
     text-decoration: underline;
     
     
@@ -252,14 +260,34 @@ footer{
     
 }
 
-.picdiv{
-    background-color: black;
-    transition: .5s ease;
-    border-color: orange;
-    display:none;
+
+
+.catbiopic {
+    display: none;
+    width: 1000px;
+    background-color: orange;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+  
+}
+.catbiopic img {
+    width: 500px;
+    float: left;
+    padding: 10px;
 }
 
-#catbios {
-    display: none;
+.catbiopic p {
+    width: 500px;
+    float: right;
+     text-align: left;
+    float: left;
+}
+
+.catbutt {
+    width: 150px;
+    margin: 0;
+    padding: 0;
 }
 

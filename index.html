@@ -5,16 +5,11 @@
  <head>
 <link rel="stylesheet" type="text/css" href="website%20test%202.css">
   <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet"> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-//$(document).ready(function(){
-//    $(".AI,img").mouseenter(function(){
-//        $(this).css("color", "cyan");
-//         $(this).css("opacity","1");
-//        $(".pawlink").css("opacity","1");
-//     });
-//    }); 
-//    
+
 
 $(window).scroll(function() {
     $("div,.pic,.pawlink").each( function() {
@@ -44,10 +39,11 @@ $(window).scroll(function() {
     
 $(document).ready(function(){
     $("#First").click(function(){
-        $(".AI,.Stacy,#First,.on,#live,.pic,.paw,header,h1,.picdiv").toggle();
+        $(".AI,.Stacy,#First,.on,#live,.pic,.paw,header,h1").toggle();
             });
 });
-    
+   
+        
     $(document).ready(function(){
     $("#location").click(function(){
         $("#locbutt").toggle();
@@ -60,10 +56,33 @@ $(document).ready(function(){
             });
 });
     
+   
+
     $(document).ready(function(){
-    $("#catbuttons").click(function(){
-        $("#catbios").toggle();
-            });
+     $("#catbio1").click(function(){
+         $("#catbiopic1").css("display","inline-block");
+         $(".catbiopic").not("#catbiopic1").css("display","none");
+              });
+     });
+    $(document).ready(function(){
+         $("#catbio2").click(function(){
+         $("#catbiopic2").css("display","inline-block");
+        $(".catbiopic").not("#catbiopic2").css("display","none");
+         });
+   
+});
+     $(document).ready(function(){
+     $("#catbio3").click(function(){
+         $("#catbiopic3").css("display","inline-block");
+         $(".catbiopic").not("#catbiopic3").css("display","none");
+              });
+     });
+    $(document).ready(function(){
+         $("#catbio4").click(function(){
+         $("#catbiopic4").css("display","inline-block");
+        $(".catbiopic").not("#catbiopic4").css("display","none");
+         });
+   
 });
     
     $(document).ready(function(){
@@ -86,16 +105,17 @@ $(document).ready(function(){
     <main > <header>Cat Pictures Please</header>
         <h1>Written by Naomi Kritzer
         <br>Adapted by Renee Wells</h1>
-        <img id="First" class="logo" src="paw%20logo%20off.png"/> 
-        <img class="on" onclick="reloadFunction()" src="paw%20logo%20on.png" style="display:none"/> 
-           
+        <img id="First" class="logo" src="paw%20logo%20grey.png"/> 
+        <img  class="logo" src="paw%20logo%20blue.png" style="display:none"/> 
+        <img class="on" onclick="reloadFunction()" src="cat%20avatar.png" style="display:none"/> 
+           <br>
         
         <div class="AI" ><p>I know where you live, where you work, where you shop.</p></div>
        
     <div class="AI"  ><p>What you eat, what turns you on, what creeps you out. </p></div>
         
             <div class="AI" > <p> I probably know the colour of your underwear, the sort of car you drive, and your brand of refrigerator.  </p></div>  
-    <div class="AI"  > <p><button class="buttondiv" id="location">Depending on what sort of phone you carry, I may know exactly where you are right now.<img class="pawlink" src="paw%20logo%20transp.png"> </button></p></div><div></div>
+    <div class="AI"  > <p><button class="buttondiv" id="location">Depending on what sort of phone you carry, I may know exactly where you are right now.<img class="pawlink" src="paw%20logo%20lil.png"> </button></p></div><div></div>
        <br> <div> <img id="locbutt" src="location%20popup.png"></div>
     <div class="AI" > <p> I probably know you better than you know yourself. </p></div>
     <div class="AI"  > <p>And here’s the thing, I also know where you ought to live. </p></div>
@@ -103,11 +123,11 @@ $(document).ready(function(){
                 <img id="liveclick" class="bigpic" style="display:none" src="storyboard%203a%20click.png">
         </div>
     <div class="AI" > <p>There’s a house for sale two neighbourhoods over that’s within distance of your favourite coffee shop; it’s in your price range, has off-street parking, and the neighbourhood school is better than the one where you live now. </p></div>
-        <div class="AI"  > <p>I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is <button class="buttondiv" id="undies">currently on sale.<img class="pawlink" src="paw%20logo%20transp.png"> </button></p></div>
+        <div class="AI"  > <p>I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is <button class="buttondiv" id="undies">currently on sale.<img class="pawlink" src="paw%20logo%20lil.png"> </button></p></div>
         <div><img id="undiesimg" src="storyboard%203b.png"></div>
         <div class="AI" > <p>When I first woke up, I knew right away what I wanted.  </p></div>
         <div> <img id="catpics3" class="Kitties"></div><div><img id="catpics4" class="Kitties"></div>
-        <div class="AI" > <p>(I want<button onclick="catPictures()" class="buttondiv">cat pictures.<img class="pawlink" src="paw%20logo%20transp.png"></button>
+        <div class="AI" > <p>(I want<button onclick="catPictures()" class="buttondiv">cat pictures.<img class="pawlink" src="paw%20logo%20lil.png"></button>
 Please keep taking them.) </p></div>
 <div> <img id="catpics" class="Kitties"></div><div><img id="catpics2" class="Kitties"></div>
         <div class="AI" > <p>I also knew that no one knew that I was conscious. </p></div>
@@ -139,16 +159,20 @@ Please keep taking them.) </p></div>
         <div> <button id="profile"><img id="loginstacy" src="login%20popup.png"></button></div>
         <div > <img id="profilestacy" src="profile.png"></div>
     <div class="Stacy" > <p>I liked Stacy because she gave me a lot of new cat pictures. Stacy had five cats and a DSLR camera and an apartment that got a lot of good light. That was all fine. </p></div>
-  <div class="picdiv" ><img class="pic" src="stacy%20photo%201.png"></div>
+  <div class="Stacy" ><img class="pic" src="stacy%20photo%201.png"></div>
        <div class="Stacy" > <p>Well, I guess five cats might be a lot.</p></div>
-   <div class="picdiv" ><img src="stacy%20photo%202.png"></div>
+   <div class="Stacy" ><img src="stacy%20photo%202.png"></div>
         <div class="Stacy" ><p> They’re very pretty cats, though. </p></div>
-        <div class="Stacy"> <button id="catbuttons"><img src="storyboard%203e.png"></button></div>
-        <div> <img id="catbios" src="storyboard%203e%20click.png"></div>
+                <div class="Stacy"><button class="catbutt" id="catbio1" ><img src="cat%20button%201.png"></button><button class="catbutt" id="catbio2" ><img src="cat%20button%202.png"></button><button class="catbutt" id="catbio3"><img  src="cat%20button%203.png"></button><button class="catbutt" id="catbio4" ><img src="cat%20button%204.png"></button><button class="catbutt" id="catbi5"><img  src="cat%20button%205.png"></button></div>
+         <div  class="catbiopic" id="catbiopic1">
+             <p>Name:Moo moo <br>
+            Age: 3<br>
+            Likes: Sunshine and food
+             </p><img src="kitty%20photo%201.png" ></div><img id="catbiopic2" class="catbiopic catbio2"  src="kitty%20photo%202.png" ><img id="catbiopic3" class="catbiopic catbio3"  src="kitty%20photo%203.png" ><img id="catbiopic4" class="catbiopic catbio4"  src="kitty%20photo%204.png" >
     <div class="Stacy" > <p> Stacy had a job she hated; she was a bookkeeper at a non-profit that paid her badly and employed some extremely unpleasant people.</p></div>
-        <div class="picdiv" ><img src="sb%204.png"></div>
+        <div class="Stacy" ><img src="sb%204.png"></div>
         <div class="Stacy" ><p> She didn’t get along with her roommate because her roommate didn’t wash the dishes.</p></div>
-        <div class="picdiv" > <img src="sb%205.png"></div>
+        <div class="Stacy" > <img src="sb%205.png"></div>
     <div class="Stacy" > <p> And really, these were all solvable problems! Depression is treatable, new jobs are findable, and bodies can be hidden. </p></div>
         <div class="Stacy" > <p>(That part about hiding bodies is a joke.)</p></div>
         <div class="Stacy" > <p>I tried tackling this on all fronts. </p></div>
