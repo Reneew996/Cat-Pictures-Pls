@@ -423,7 +423,8 @@ b {
     
   div {
     
-     margin: 0;
+     margin-left: 5%;
+      margin-right: 5%;
       margin-top: 20px;
       margin-bottom: 20px;
       max-width: 500px;
