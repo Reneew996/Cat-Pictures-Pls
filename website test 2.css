@@ -411,7 +411,7 @@ b {
 
 #submitbutt {
     cursor: pointer;
-    margin-bottom: 500px;
+    
     
 }
 
@@ -431,13 +431,14 @@ b {
   }
     }  
     
-
+@media only screen and (max-width: 1000px) { 
   .catbiopic img{
    height: 250px;
       width: auto;
     float: left;
   }
-
+}
+@media only screen and (max-width: 1000px) { 
     header {
         font-size: 10vw;
     }
@@ -448,7 +449,7 @@ b {
         font-size: 4vw;
     }
 
-
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 1001px) {
