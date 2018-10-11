@@ -25,7 +25,20 @@ $(window).scroll(function() {
     }); 
 });
 
-
+ $(window).resize(function() {
+  var width = $(window).width();
+  if (width < 1200){
+    $(window).scroll(function() {
+    $("div,.pic,.pawlink").each( function() {
+        if( $(window).scrollTop() > $(this).offset().top - 1000 ) {
+            $(this).css('opacity',1);
+        } else {
+            $(this).css('opacity',0);
+        }
+    }); 
+});
+  }
+});
    
     $(document).ready(function(){
     $("#live,#liveclick").click(function(){
