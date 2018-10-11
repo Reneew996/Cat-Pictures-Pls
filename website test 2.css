@@ -423,7 +423,8 @@ b {
     
   div {
     
-     margin: auto;
+     margin-left: 20px;
+      margin-right: 20px;
       max-width: 500px;
       align-content: center;
       overflow: hidden;
