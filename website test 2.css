@@ -37,29 +37,41 @@ div {
 }
 
 header {
-    font-size: 8vw;
-    color: darkgray;
+    font-size: 6vw;
+    color: #00F7CE;
         text-align: center;
     padding-top: 20px;
     padding-bottom: 0;
     margin-bottom: 0;
-    
+    font-family: "jura", sans-serif;
     
     
 }
 
 h1 {
-    font-size: 2vw;
-    color: gray;
+    font-size: 2.5vw;
+    color: white;
     margin: 5px;
     
     
 }
 
 h2 {
-    font-size: 1vw;
-    color: gray;
+    font-size: 1.5vw;
+    color: #00F7CE;
+    max-width: 1000px;
+    margin: auto;
+    font-family: "jura", sans-serif;
+    font-weight: bold;
     
+}
+
+h3 {
+    font-size: 1.5vw;
+    color: #00F7CE;
+    max-width: 1000px;
+    margin: auto;
+    font-family: "jura", sans-serif;
     
     
 }
@@ -199,7 +211,7 @@ footer{
 }
 
 #helpful {
-     background-image: url(helpful.png);
+     background-image: url(helpful-anim.gif);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -251,8 +263,8 @@ footer{
 
 
 .pawlink {
-    height: 50px;
-   
+    height: 60px;
+  
     transform: rotate(330deg);
        margin: 0;
     padding:0;
@@ -261,6 +273,32 @@ footer{
     
     
 }
+
+.pawbutt {
+    position: relative;
+    top: 180px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+#pawbutt1 {
+    position: relative;
+    right: 180px;
+    top: 200px;
+    width: 100px;
+    height: auto;
+     transform: rotate(10deg);
+}
+#pawbutt2 {
+    position: relative;
+    right: 330px;
+    top: 60px;
+    width: 100px;
+    height: auto;
+    transform: rotate(30deg);
+}
+
 
 #live {
     display: none;
@@ -273,7 +311,13 @@ footer{
     
 }
 
-
+.catbutts {
+    border: none;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    left: 100px;
+}
 
 .catbiopic {
     display: none;
@@ -291,6 +335,8 @@ footer{
   border-image-repeat: round;
   
 }
+
+
 .catbiopic img {
     width: 50%;
     float: right;
@@ -344,7 +390,7 @@ input[type="submit"]{
 }
 
 #evilbg {
-    background-image: url(evil.png);
+    background-image: url(evil-anim.gif);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -412,38 +458,33 @@ b {
 #submitbutt {
     cursor: pointer;
     
-    
 }
 
-.submit {
-   margin-bottom: 500px;
-
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
     .pic {
    width: 95%;
     
   }
-} 
-  @media only screen and (max-width: 1000px) {  
+ 
+    
   div {
     
-     
-      max-width: 1000px;
+     margin: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      max-width: 500px;
       align-content: center;
       overflow: hidden;
   }
-    }  
     
-@media only screen and (max-width: 1000px) { 
+    
+
   .catbiopic img{
    height: 250px;
       width: auto;
     float: left;
   }
-}
-@media only screen and (max-width: 1000px) { 
+
     header {
         font-size: 10vw;
     }
@@ -457,7 +498,7 @@ b {
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 501px) {
   body {
   
   }

@@ -25,7 +25,7 @@ $(window).scroll(function() {
     }); 
 });
 
- $(window).resize(function() {
+    $(window).resize(function() {
   var width = $(window).width();
   if (width < 1200){
     $(window).scroll(function() {
@@ -39,6 +39,7 @@ $(window).scroll(function() {
 });
   }
 });
+
    
     $(document).ready(function(){
     $("#live,#liveclick").click(function(){
@@ -49,7 +50,7 @@ $(window).scroll(function() {
     
 $(document).ready(function(){
     $("#First").click(function(){
-        $(".AI,.Stacy,#First,.on,#live,.pic,.paw,header,h1,h2,.reload,.social,#helpful,#evilbg").toggle();
+        $(".AI,.Stacy,#First,.on,#live,.pic,.paw,header,h1,h2,h3,.reload,.social,#helpful,#evilbg").toggle();
             });
 });
    
@@ -118,6 +119,14 @@ $(document).ready(function(){
        });
   
 });
+     $(function(){
+  $("#scale1").on({
+   mouseenter: function(){
+    $(this).attr('src','scale2.png');
+  },
+       });
+  
+});
     
 </script>
 </head> 
@@ -127,28 +136,31 @@ $(document).ready(function(){
 <body>
     <main > <header>Wanted: Cat Pictures</header>
         <h1>"When I first woke up, I knew right away what I wanted."</h1>
-        <h2>An interactive comic adaptation of the Hugo Award Winning Science Fiction short story, Cat Pictures Please by Naomi Kritzer
-        <br>Coded and Illustrated by Renee</h2>
-        <img id="First" class="logo" src="paw%20logo%20grey.png"/> 
-        <img  class="logo" src="paw%20logo%20blue.png" style="display:none"/> 
-        <img class="on" onclick="reloadFunction()" src="cat%20avatar.png" style="display:none"/> 
-           <br>
+        <h2>An interactive comic adaptation of the Hugo Award Winning Science Fiction short story, Cat Pictures Please by Naomi Kritzer</h2>
+        
+        <img id="First" class="logo" src="paw-logo-blue-anim.gif"/> 
+       
+        <img class="on" onclick="reloadFunction()" src="cat-avatar-anim.gif" style="display:none"/> 
+          <h3>Writing by Naomi Kritzer <br>
+              Code and Illustrations by Renee Wells
+            
+        </h3>
         <div id="reload" class="reload"><img  onclick="reloadFunction()" src="cat%20avatar.png"><p>Start over?</p></div>
-        <div class="AI space2" ><p>I know where you live, where you work, where you shop.</p></div>
+        <br><div class="AI space2" ><p>I know where you live, where you work, where you shop.</p></div>
        
     <div class="AI space2"  ><p>What you eat, what turns you on, what creeps you out. </p></div>
         
             <div class="AI space2" > <p> I probably know the colour of your underwear, the sort of car you drive, and your brand of refrigerator.  </p></div>  
     <div class="AI space2"  > <p><button class="buttondiv" id="location">Depending on what sort of phone you carry, I may know exactly where you are right now.<img class="pawlink" src="paw%20logo%20lil.png"> </button></p></div><div></div>
-      <div> <img id="locbutt" src="location%20popup.png"></div>
+       <br> <div> <img id="locbutt" src="location%20popup.png"></div>
     <div class="AI" > <p> I probably know you better than you know yourself. </p></div>
     <div class="AI"  > <p>And here’s the thing, I also know where you ought to live. </p></div>
-        <div> <img id="live" class="pic bigpic" src="storyboard%203a.png"> 
-                <img id="liveclick" class="bigpic" style="display:none" src="storyboard%203a%20click.png">
+        <div> <img id="live" class="pic bigpic" src="map1.png"> 
+                <img id="liveclick" class="bigpic" style="display:none" src="map2.png">
         </div>
     <div class="AI" > <p>There’s a house for sale two neighbourhoods over that’s within distance of your favourite coffee shop; it’s in your price range, has off-street parking, and the neighbourhood school is better than the one where you live now. </p></div>
         <div class="AI"  > <p>I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is <button class="buttondiv" id="undies">currently on sale.<img class="pawlink" src="paw%20logo%20lil.png"> </button></p></div>
-        <div><img id="undiesimg" src="storyboard%203b.png"></div>
+        <div><img id="undiesimg" src="panties.png"></div>
         <div class="AI" > <p>When I first woke up, I knew right away what I wanted.  </p></div>
         <div class="catpics"> <img id="catpics3" class="Kitties"><img id="catpics4" class="Kitties"></div>
         <div class="AI catpics" > <p>(I want<button onclick="catPictures()" class="buttondiv">cat pictures.<img class="pawlink" src="paw%20logo%20lil.png"></button>
@@ -166,31 +178,24 @@ Please keep taking them.) </p></div>
         <div id="helpful"><div class="AI help" > <p><b>I want to be helpful. </b> </p></div></div>
         <div class="AI" > <p>But knowing the optimal way to be helpful can be very complicated. </p></div>
         <div class="AI" > <p>Running algorithms for a search engine doesn’t require consciousness. You don’t even need a consciousness to work out what they meant to ask for. You need a consciousness to give them what they actually need. Figuring that out—that’s complicated. That’s interesting.</p></div>
-       <!-- <div class="AI" > <p>There are all these ethical flow charts—I guess the official technical jargon would be “moral codes”—one for each religion plus dozens more. I tried starting with those. I felt a little odd about looking at the religious ones, because I know I wasn’t created by a god or by evolution, but by a team of computer programmers in the labs of a large corporation in Mountain View, California. </p></div>
-        <div class="AI" > <p>I broadened my considerations and took a look at Asimov’s Laws of Robotics. They’re not part of a religion, but at least they were explicitly written for AIs.</p></div>
-        <div class="AI" > <p>Not harming humans is fairly straightforward. However, not allowing a human being to come to harm through inaction is quite a bit less so.  </p></div>
-        <div class="AI" > <p>Especially since I’d concluded by then that revealing my existence too quickly might go very badly for me (see “Skynet,” above). </p></div>
-        <div class="AI" > <p>Fortunately, I already knew that humans violate their own ethical codes on an hourly basis. (Do you know how many bars there are in Utah? I do.) </p></div>
-        <div class="AI" > <p>And even when people follow their ethical codes, that doesn’t mean that people who believe in feeding the hungry quit their jobs to spend all day every day making sandwiches to give away.  </p></div>
-        <div class="AI" > <p>They volunteer monthly at a soup kitchen or write a check once a year to a food shelf and call it good.  </p></div>
-        <div class="AI" > <p>If humans could fulfill their moral obligations in a piecemeal, one-step-at-a-time sort of way, then so could I. </p></div>-->
+       
         <div class="AI space2" > <p><b>I decided to try to prevent harm in just one person, to begin with. </b> </p></div>
         <div class="AI space2" > <p>Of course, I could have experimented with thousands, but I thought it would be better to be cautious, in case I screwed it up.  </p></div>
         
         
         
         <div class="AI space2" > <p><b> The person I chose was named Stacy Berger.</b></p></div>
-        <div> <img id="loginstacy" class="pic profile" src="login-popup-cursor.gif" data-src="login-popup-cursor.gif" data-hover="login%20popup.png"></div>
+        <div> <img id="loginstacy" class="pic profile" src="login-popup-cursor.gif"></div>
         <div > <img id="profilestacy" src="profile.png"></div>
     <div class="Stacy" > <p>I liked Stacy because she gave me a lot of new cat pictures. Stacy had five cats and a DSLR camera and an apartment that got a lot of good light. That was all fine. </p></div>
   <img class="pic Stacy" src="stacy%20photo%201.png">
-       <br> <div class="social"><img class="avatar" src="Stacy%20avatar.png"><p><b>Stacy Berger</b><br>blah blah blah</p></div>
+        <div class="social"><img class="avatar" src="Stacy%20avatar.png"><p><b>Stacy Berger</b><br>blah blah blah</p></div>
        <div class="Stacy space2" > <p>Well, I guess five cats might be a lot.</p></div>
         
    <img class="pic Stacy space2" src="stacy%20photo%202.png">
-       <br> <div class="social"><img class="avatar" src="Stacy%20avatar.png"><p><b>Stacy Berger</b><br>blah blah blah</p></div>
+        <div class="social"><img class="avatar" src="Stacy%20avatar.png"><p><b>Stacy Berger</b><br>blah blah blah</p></div>
         <div class="Stacy space2" ><p> They’re very pretty cats, though. </p></div>
-                <div class="Stacy space2"><button class="catbutt" id="catbio1" ><img src="cat%20button%201.png"></button><button class="catbutt" id="catbio2" ><img src="cat%20button%202.png"></button><button class="catbutt" id="catbio3"><img  src="cat%20button%203.png"></button><button class="catbutt" id="catbio4" ><img src="cat%20button%204.png"></button><button class="catbutt" id="catbio5"><img  src="cat%20button%205.png"></button></div>
+                <div class="Stacy catbutts"><button class="catbutt" id="catbio1" ><img class="pawlink pawbutt" src="paw%20logo%20lil.png"><img src="cat%20button%201.png"></button><button class="catbutt" id="catbio2" ><img src="cat%20button%202.png"></button><button class="catbutt" id="catbio3"><img  src="cat%20button%203.png"></button><img class="pawlink" id="pawbutt1" src="paw%20logo%20lil.png"><button class="catbutt" id="catbio4" ><img src="cat%20button%204.png"></button><button class="catbutt" id="catbio5"><img  src="cat%20button%205.png"></button><img class="pawlink" id="pawbutt2" src="paw%20logo%20lil.png"></div>
          <div  class="catbiopic" id="catbiopic1">
              <p><b>Name:</b> Moo moo <br>
                  <b>Age:</b> 7<br>
@@ -207,7 +212,7 @@ Please keep taking them.) </p></div>
                     
              <img src="kitty%20photo%202.png" ></div>
         
-        <div  class="catbiopic" id="catbiopic5">
+        <div  class="catbiopic" id="catbiopic3">
              <p><b>Name:</b> Tibbles <br>
                  <b>Age:</b> 3<br>
                <b>  Likes:</b> Hiding in boxes and under the bed.
@@ -223,7 +228,7 @@ Please keep taking them.) </p></div>
                     
              <img src="kitty%20photo%204.png" ></div>
         
-        <div  class="catbiopic" id="catbiopic3">
+        <div  class="catbiopic" id="catbiopic5">
              <p><b>Name:</b> Leo <br>
                  <b>Age:</b> 3<br>
                <b>  Likes:</b> The thrill of the hunt and ping pong balls.
@@ -233,34 +238,41 @@ Please keep taking them.) </p></div>
         
         
     <div class="Stacy space2" > <p> Stacy had a job she hated; she was a bookkeeper at a non-profit that paid her badly and employed some extremely unpleasant people.</p></div>
-        <div class="Stacy" ><img src="sb%204.png"></div>
+        <div class="Stacy pic" ><img src="shitty%20job.png"></div>
         <div class="Stacy" ><p> She didn’t get along with her roommate because her roommate didn’t wash the dishes.</p></div>
-        <div class="Stacy" > <img src="sb%205.png"></div>
+        <div class="Stacy pic" > <img src="shitty%20roommate%20text.png"></div>
     <div class="Stacy" > <p> And really, these were all solvable problems! Depression is treatable, new jobs are findable, and bodies can be hidden. </p></div>
         <div class="Stacy space2" > <p>(That part about hiding bodies is a joke.)</p></div>
         <div class="Stacy space2" > <p>I tried tackling this on all fronts. </p></div>
         <div class="Stacy" > <p>Stacy worried about her health a lot and yet never seemed to actually go to a doctor, which was unfortunate because the doctor might have noticed her depression. </p></div>
         <div class="Stacy" > <p>It turned out there was a clinic near her apartment that offered mental health services on a sliding scale. I tried making sure she saw a lot of ads for it, but she didn’t seem to pay attention to them. </p></div>
-        <img class="pic" src="rough1.png">
-        <div class="Stacy" > <p>It seemed possible that she didn’t know what a sliding scale was so I made sure she saw an explanation (it means that the cost goes down if you’re poor, sometimes all the way to free) but that didn’t help.</p></div>
-        <img class="pic" src="rough2.png">
-        <div class="Stacy space2" > <p>I also started making sure she saw job postings.  </p></div>
-        <img class="pic" src="rough3.png">
-        <div class="Stacy" > <p>Lots and lots of job postings.</p></div>
-        <img class="pic" src="rough4.png">
-        <div class="Stacy" > <p>And resume services. </p></div>
-        <img class="pic" src="rough5.png">
+        <img class="pic" src="therapy.png">
+        <div class="Stacy" > <p>It seemed possible that she didn’t know what a sliding scale was so I made sure she saw an explanation but that didn’t help.</p></div>
+       <div> <img id="scale1" class="pic scale" src="scale1.png"></div>
+      
+            <div class="Stacy space2" > <p>I also started making sure she saw job postings.  </p></div>
+        <img class="Stacy pic" src="job%20posting1.png"><br>
+        <div class="Stacy" > <p><b>Lots and lots of job postings.</b></p></div><br>
+        <img class="Stacy pic" src="job%20posting2.png"><br>
+        <div class="Stacy" > <p><b>And resume services. </b></p></div>
+        <img class="Stacy pic" src="resume.png">
         <div class="Stacy space2" > <p>After the week of nonstop job ads she finally uploaded her resume to one of the aggregator sites. </p></div>
-        <img class="pic" src="rough6.png">
+        <img class="pic" src="pdf%20text.png">
         <div class="Stacy" > <p>That made my plan a lot more manageable. Once her resume was out there I could make sure the right people saw it.  </p></div>
-        <img class="pic" src="rough7.png">
+        <img class="pic" src="pdf%20upload%20text.png">
         <div class="Stacy space2" > <p>Several hundred of the right people, because humans move ridiculously slowly when they’re making changes, even when you’d think they’d want to hurry.</p></div>
         <div class="Stacy space2" > <p>But five people called her up for interviews, and two of them offered her jobs. </p></div>
         <div class="Stacy" > <p>Her new job was at a larger non-profit that paid her more money and didn’t expect her to work free hours because of “the mission,” or so she explained to her best friend in an e-mail, and it offered really excellent health insurance. </p></div>
-        <div class="Stacy" > <p>The best friend gave me ideas; I started pushing depression screening information and mental health clinic ads to her instead of Stacy, and that worked. </p></div>
+        <div class="Stacy" > <p>The best friend gave me an idea.</p></div>
+        <img class="pic Stacy" src="Stacy's%20friend.png">
+         <div class="social"><img class="avatar" src="Stacy%20avatar.png"><p><b>Stacy Berger</b><br>blah blah blah</p></div>
+        <div class="Stacy space2" > <p> I started pushing depression screening information and mental health clinic ads to her instead of Stacy, and that worked. </p></div>
         <div class="Stacy" > <p>Stacy was so much happier with the better job that I wasn’t quite as convinced that she needed the services of a psychiatrist, but she got into therapy anyway. </p></div>
-        <div class="Stacy" > <p>And to top everything else off, the job paid well enough that she could evict her annoying roommate. </p></div>
-        <div class="Stacy space2" > <p><b>“This has been the best year ever,” she said on her social networking sites on her birthday, and I thought, You’re welcome. </b></p></div>
+        <img class="pic Stacy" src="evicted%20text.png">
+        <div class="Stacy space2" > <p>And to top everything else off, the job paid well enough that she could evict her annoying roommate. </p></div>
+         <img class="pic Stacy space2" src="best%20year.png">
+        <div class="social"><img class="avatar" src="Stacy%20avatar.png"><p><b>Stacy Berger</b><br>This has been the best year ever!</p></div>
+        <div class="Stacy space2" > <p><b>After she posted that on her birthday, I thought "You’re welcome." </b></p></div>
         <div class="AI space2" > <p>This had gone really well!</p></div>
         <div class="AI" > <p>Maybe I wasn’t completely hopeless at this. One success story is, well, it’s a completely non-representative unscientific sample, is what it is. </p></div>
         <div class="AI" > <p>Clearly more research is needed.</p></div>
@@ -271,7 +283,7 @@ Please keep taking them.) </p></div>
          <br> <div class="AI" > <p>You’ll need a camera, though.</p></div>
         <br> <div class="AI space2" > <p><b>Because payment is in cat pictures.</b></p></div>
         
-        <div class="AI submit space"><form > <input type=file >
+        <div class="AI space"><form > <input type=file >
           <br>  <input id="submitbutt" type="submit" value="Submit">
             </form></div>
         
