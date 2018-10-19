@@ -499,8 +499,8 @@ b {
 
 /* Desktop Styles */
 @media only screen and (min-width: 2000px) {
-  body {
-        max-width: 1000px;
+  div {
+        max-width: 1500px;
       margin: auto;
   }
 }
