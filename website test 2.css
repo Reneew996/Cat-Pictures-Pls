@@ -457,7 +457,7 @@ b {
 
 #submitbutt {
     cursor: pointer;
-    
+    margin-bottom: 1000px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -508,7 +508,7 @@ b {
     
   div {
     
-     
+      font-size: 5vw;
       margin-top: 20px;
       margin-bottom: 20px;
       max-width: 2000px;
