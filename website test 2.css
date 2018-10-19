@@ -461,7 +461,7 @@ b {
 }
 
 #submitdiv {
-    margin-bottom: 500px;
+    margin-bottom: 750px;
     
 }
 
@@ -523,10 +523,10 @@ b {
       margin-right: 500px;
   }
     
-    .AI  {
+    .AI p {
     font-size:3vw;
     }
-    .Stacy {
+    .Stacy p{
     font-size:3vw;
     }
 }
