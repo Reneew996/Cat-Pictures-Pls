@@ -499,13 +499,20 @@ b {
 
 /* Desktop Styles */
 @media only screen and (min-width: 2000px) {
+   .pic {
+   width: 95%;
+    
+  }
+ 
+    
   div {
-        max-width: 2000px;
-        margin-left: 500px;
-      margin-right:500px;
+    
+     margin: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      max-width: 2000px;
+      align-content: center;
+      overflow: hidden;
   }
-    body {
-        align-content: center;
-        
-  }
+    
 }
