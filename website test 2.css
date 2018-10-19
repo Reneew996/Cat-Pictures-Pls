@@ -462,6 +462,7 @@ b {
 
 #submitdiv {
     margin-bottom: 1000px;
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -523,7 +524,7 @@ b {
   }
     
     p {
-    font-size:10vw;
+    font-size:5vw;
     }
     
 }
