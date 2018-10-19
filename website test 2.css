@@ -523,8 +523,10 @@ b {
       margin-right: 500px;
   }
     
-    p {
-    font-size:5vw;
+    .AI  {
+    font-size:2vw;
     }
-    
+    .Stacy {
+    font-size:2vw;
+    }
 }
