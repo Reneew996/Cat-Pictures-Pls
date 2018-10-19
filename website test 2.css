@@ -514,6 +514,8 @@ b {
       max-width: 2000px;
       align-content: center;
       overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
   }
     
 }
