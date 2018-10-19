@@ -457,7 +457,7 @@ b {
 
 #submitbutt {
     cursor: pointer;
-    
+    margin:10px;
 }
 
 #submitdiv {
@@ -512,7 +512,7 @@ b {
     
   div {
     
-      font-size: 10vw;
+      
       margin-top: 20px;
       margin-bottom: 20px;
       max-width: 2000px;
@@ -521,5 +521,9 @@ b {
       margin-left: 500px;
       margin-right: 500px;
   }
+    
+    p {
+    font-size:10vw;
+    }
     
 }
