@@ -519,14 +519,14 @@ b {
       max-width: 2500px;
       align-content: center;
       overflow: hidden;
-      margin-left: 500px;
-      margin-right: 500px;
+      margin-left:400px;
+      margin-right: 400px;
   }
     
     .AI p {
-    font-size:3vw;
+    font-size:2vw;
     }
     .Stacy p{
-    font-size:3vw;
+    font-size:2vw;
     }
 }
