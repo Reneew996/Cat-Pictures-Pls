@@ -469,7 +469,10 @@ b {
     margin:10px;
 }
 
-
+ #submitdiv {
+    margin-bottom: 750px;
+    
+}
 
 @media only screen and (max-width: 500px) {
     .pic {
@@ -488,10 +491,7 @@ b {
       overflow: hidden;
   }
     
-   #submitdiv {
-    margin-bottom: 750px;
-    
-}  
+ 
 
   .catbiopic img{
    height: 250px;
@@ -531,9 +531,6 @@ b {
       margin-left:500px;
       margin-right: 500px;
   }
-    #submitdiv {
-    margin-bottom: 750px;
-    
-}
+   
    
 }
