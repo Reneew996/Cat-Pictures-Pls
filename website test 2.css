@@ -477,10 +477,7 @@ b {
     
   }
  
-    #submitdiv {
-    margin-bottom: 750px;
-    
-}
+   
   div {
     
      margin: 0;
@@ -491,7 +488,10 @@ b {
       overflow: hidden;
   }
     
+   #submitdiv {
+    margin-bottom: 750px;
     
+}  
 
   .catbiopic img{
    height: 250px;
