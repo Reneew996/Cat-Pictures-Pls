@@ -2,7 +2,7 @@ body {
     background-color: black;
    text-align: center;
     font-family: 'Caveat', cursive;
-    overflow-x: hidden;
+    
     
 }
 
@@ -511,7 +511,10 @@ b {
       overflow: hidden;
   }
     
- 
+  #reload {
+    visibility: hidden;
+    
+    }
 
   .catbiopic img{
    height: 250px;
@@ -539,10 +542,7 @@ b {
     
   }
  
-    #reload {
-    visibility: hidden;
-    
-    }
+   
     
   div {
     
