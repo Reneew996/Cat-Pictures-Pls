@@ -200,8 +200,8 @@ button {
 }
 
 footer{
-    font-size: 15px;
-    color: grey;
+    font-size: 20px;
+    color: #00F7CE;
    margin:0;
   
     width: 100%;
@@ -350,7 +350,7 @@ footer{
     overflow: hidden;
      text-align: left;
     float: left;
-   line-height: 35px;
+   line-height: 45px;
 }
 
 .catbutt {
@@ -444,7 +444,6 @@ b {
  right: 80px;
     
 }
-
 .social {
     width: 750px;
     background-color: white;
@@ -466,7 +465,7 @@ b {
 
 #submitbutt {
     cursor: pointer;
-    margin:10px;
+    
 }
 
  #submitdiv {
@@ -474,13 +473,32 @@ b {
     
 }
 
+#catsbg {
+    background-image: url(many%20kitties.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    border: none;
+    height: 1000px;
+        display: none;
+}
+
+.AI .catpics {
+     background-color: rgba(0, 0, 0, 0.85);
+    
+    
+    
+}
+
+
 @media only screen and (max-width: 500px) {
     .pic {
    width: 95%;
     
   }
  
-   
+    
   div {
     
      margin: 0;
@@ -491,7 +509,7 @@ b {
       overflow: hidden;
   }
     
- 
+    
 
   .catbiopic img{
    height: 250px;
@@ -510,6 +528,7 @@ b {
     }
 
 }
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 2000px) {
