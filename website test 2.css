@@ -127,8 +127,7 @@ p {
     text-align: left;
     display: block;
     margin: 0;
-    padding: 5px;
-    cursor: pointer;
+    padding: 5px;;
 }
 
 .Stacy {
@@ -201,8 +200,8 @@ button {
 }
 
 footer{
-    font-size: 15px;
-    color: grey;
+    font-size: 20px;
+    color: #00F7CE;
    margin:0;
   
     width: 100%;
@@ -218,7 +217,7 @@ footer{
     padding: 0;
     background-position: center;
     border: none;
-   height: 1500px;
+   height: 1000px;
     width: 100%;
     display: none;
     
@@ -351,7 +350,7 @@ footer{
     overflow: hidden;
      text-align: left;
     float: left;
-   line-height: 35px;
+   line-height: 45px;
 }
 
 .catbutt {
@@ -397,7 +396,7 @@ input[type="submit"]{
     padding: 0;
     background-position: center;
     border: none;
-    height: 1500px;
+    height: 1000px;
         display: none;
 }
 
@@ -427,13 +426,14 @@ b {
 #reload {
     position: fixed;
     width: 100px;
-   left: 300px;
+    right: 0px;
+    bottom: 0;
     margin: 20px;
     color: #00F7CE;
     display: none;
     cursor: pointer;
     z-index: 2;
-    opacity: 1;
+    opacity: 0.5;
     border: none;
     
     
@@ -444,7 +444,6 @@ b {
  right: 80px;
     
 }
-
 .social {
     width: 750px;
     background-color: white;
@@ -466,7 +465,7 @@ b {
 
 #submitbutt {
     cursor: pointer;
-    margin:10px;
+    
 }
 
  #submitdiv {
@@ -481,7 +480,7 @@ b {
     padding: 0;
     background-position: center;
     border: none;
-    height: 1500px;
+    height: 1000px;
         display: none;
 }
 
@@ -492,13 +491,14 @@ b {
     
 }
 
+
 @media only screen and (max-width: 500px) {
     .pic {
    width: 95%;
     
   }
  
-   
+    
   div {
     
      margin: 0;
@@ -509,7 +509,7 @@ b {
       overflow: hidden;
   }
     
- 
+    
 
   .catbiopic img{
    height: 250px;
@@ -529,6 +529,7 @@ b {
 
 }
 
+
 /* Desktop Styles */
 @media only screen and (min-width: 2000px) {
    
@@ -541,8 +542,8 @@ b {
   div {
     
       
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       max-width: 2500px;
       align-content: center;
       overflow: hidden;
