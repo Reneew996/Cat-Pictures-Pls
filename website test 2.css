@@ -426,29 +426,7 @@ b {
     
 }
 
-#reload {
-    position: fixed;
-    width: 100px;
-   
-    margin: 20px;
-    color: #00F7CE;
-    display: none;
-    cursor: pointer;
-    z-index: 2;
-    opacity: 1;
-    border: none;
-    
-    
-    
-    
-    
-}
 
-#reload p{
-    position: relative;
- right: 80px;
-    
-}
 
 .social {
     width: 750px;
