@@ -2,6 +2,7 @@ body {
     background-color: black;
    text-align: center;
     font-family: 'Caveat', cursive;
+    overflow-x: hidden;
     
 }
 
@@ -538,6 +539,10 @@ b {
     
   }
  
+    #reload {
+    visibility: hidden;
+    
+    }
     
   div {
     
