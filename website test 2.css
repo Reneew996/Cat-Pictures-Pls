@@ -184,7 +184,29 @@ img {
     
 }
 
+#reload {
+    position: fixed;
+    width: 100px;
+    left: 10px;
+    margin: 20px;
+    color: #00F7CE;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    border: none;
+    
+    
+    
+    
+    
+}
 
+#reload p{
+    position: relative;
+ right: 80px;
+    
+}
 
 button {
     border: none;
@@ -491,11 +513,12 @@ b {
       align-content: center;
       overflow: hidden;
   }
-    
-  #reload {
-    opacity: 0;
-    
-    }
+  
+    .catbiopic p{
+   height: 250px;
+      width: auto;
+    float: left;
+  }
 
   .catbiopic img{
    height: 250px;
