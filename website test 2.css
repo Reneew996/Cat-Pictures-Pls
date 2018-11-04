@@ -2,6 +2,7 @@ body {
     background-color: black;
    text-align: center;
     font-family: 'Caveat', cursive;
+    overflow: scroll;
     
 }
 
@@ -127,7 +128,8 @@ p {
     text-align: left;
     display: block;
     margin: 0;
-    padding: 5px;;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .Stacy {
@@ -182,7 +184,29 @@ img {
     
 }
 
+#reload {
+    position: fixed;
+    width: 100px;
+    left: 10px;
+    margin: 20px;
+    color: #00F7CE;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    border: none;
+    
+    
+    
+    
+    
+}
 
+#reload p{
+    position: relative;
+ right: 80px;
+    
+}
 
 button {
     border: none;
@@ -200,8 +224,8 @@ button {
 }
 
 footer{
-    font-size: 20px;
-    color: #00F7CE;
+    font-size: 15px;
+    color: grey;
    margin:0;
   
     width: 100%;
@@ -248,6 +272,7 @@ footer{
 
 #profilestacy {
     display: none;
+    width: 95%;
     
 }
 
@@ -315,8 +340,7 @@ footer{
     border: none;
     max-width: 1000px;
     margin: auto;
-    position: relative;
-    left: 100px;
+    
 }
 
 .catbiopic {
@@ -350,7 +374,7 @@ footer{
     overflow: hidden;
      text-align: left;
     float: left;
-   line-height: 45px;
+   line-height: 35px;
 }
 
 .catbutt {
@@ -423,27 +447,8 @@ b {
     
 }
 
-#reload {
-    position: fixed;
-    width: 100px;
-    right: 0px;
-    bottom: 0;
-    margin: 20px;
-    color: #00F7CE;
-    display: none;
-    cursor: pointer;
-    z-index: 2;
-    opacity: 0.5;
-    border: none;
-    
-    
-}
 
-#reload p{
-    position: relative;
- right: 80px;
-    
-}
+
 .social {
     width: 750px;
     background-color: white;
@@ -465,7 +470,7 @@ b {
 
 #submitbutt {
     cursor: pointer;
-    
+    margin:10px;
 }
 
  #submitdiv {
@@ -491,30 +496,30 @@ b {
     
 }
 
-
 @media only screen and (max-width: 500px) {
     .pic {
    width: 95%;
     
   }
  
-    
+   
   div {
     
      margin: 0;
       margin-top: 20px;
       margin-bottom: 20px;
-      max-width: 500px;
+      max-width: 100%;
       align-content: center;
-      overflow: hidden;
+      text-align: center;
+     
   }
-    
-    
+  
+  
 
   .catbiopic img{
-   height: 250px;
-      width: auto;
-    float: left;
+   
+      width: 500px;
+    
   }
 
     header {
@@ -529,7 +534,6 @@ b {
 
 }
 
-
 /* Desktop Styles */
 @media only screen and (min-width: 2000px) {
    
@@ -538,18 +542,20 @@ b {
     
   }
  
+   
     
   div {
     
       
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
       max-width: 2500px;
       align-content: center;
       overflow: hidden;
       margin-left:500px;
       margin-right: 500px;
   }
+   
    
    
 }
