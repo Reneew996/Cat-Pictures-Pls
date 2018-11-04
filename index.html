@@ -14,18 +14,7 @@
 <script>
 
 
-$(document).idle({
-  onIdle: function(){
-    $(".AI,.Stacy,.on,#live,.pic,.paw,.reload,.social,#helpful,#evilbg,#catsbg").css("display","none");
-      $("#First,header,h1,h2,h3").css("display","block");
-      $('html,body').scrollTop(0);
-     
-  },
-  events: 'mousemove scroll',
-  idle: 10000
-})
-
-
+ 
 $(window).scroll(function() {
     $("div,.pic,.pawlink").each( function() {
         if( $(window).scrollTop() > $(this).offset().top - 500 ) {
