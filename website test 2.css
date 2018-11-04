@@ -2,7 +2,6 @@ body {
     background-color: black;
    text-align: center;
     font-family: 'Caveat', cursive;
-    overflow: scroll;
     
 }
 
@@ -184,29 +183,7 @@ img {
     
 }
 
-#reload {
-    position: fixed;
-    width: 100px;
-    left: 10px;
-    margin: 20px;
-    color: #00F7CE;
-    display: none;
-    cursor: pointer;
-    z-index: 2;
-    opacity: 1;
-    border: none;
-    
-    
-    
-    
-    
-}
 
-#reload p{
-    position: relative;
- right: 80px;
-    
-}
 
 button {
     border: none;
@@ -241,7 +218,7 @@ footer{
     padding: 0;
     background-position: center;
     border: none;
-   height: 1000px;
+   height: 1500px;
     width: 100%;
     display: none;
     
@@ -272,7 +249,6 @@ footer{
 
 #profilestacy {
     display: none;
-    width: 95%;
     
 }
 
@@ -421,7 +397,7 @@ input[type="submit"]{
     padding: 0;
     background-position: center;
     border: none;
-    height: 1000px;
+    height: 1500px;
         display: none;
 }
 
@@ -448,7 +424,26 @@ b {
     
 }
 
+#reload {
+    position: fixed;
+    width: 100px;
+   left: 300px;
+    margin: 20px;
+    color: #00F7CE;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    border: none;
+    
+    
+}
 
+#reload p{
+    position: relative;
+ right: 80px;
+    
+}
 
 .social {
     width: 750px;
@@ -486,7 +481,7 @@ b {
     padding: 0;
     background-position: center;
     border: none;
-    height: 1000px;
+    height: 1500px;
         display: none;
 }
 
@@ -509,18 +504,17 @@ b {
      margin: 0;
       margin-top: 20px;
       margin-bottom: 20px;
-      max-width: 100%;
+      max-width: 500px;
       align-content: center;
-      text-align: center;
-     
+      overflow: hidden;
   }
-  
-  
+    
+ 
 
   .catbiopic img{
-   
-      width: 500px;
-    
+   height: 250px;
+      width: auto;
+    float: left;
   }
 
     header {
@@ -543,7 +537,6 @@ b {
     
   }
  
-   
     
   div {
     
@@ -556,7 +549,6 @@ b {
       margin-left:500px;
       margin-right: 500px;
   }
-   
    
    
 }
