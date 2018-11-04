@@ -249,8 +249,7 @@ footer{
 
 #profilestacy {
     display: none;
-    height: 1000px;
-    width: 1700px;
+    width: 95%;
     
 }
 
@@ -441,11 +440,7 @@ b {
     
 }
 
-#reload p{
-    position: relative;
- right: 80px;
-    
-}
+
 
 .social {
     width: 750px;
