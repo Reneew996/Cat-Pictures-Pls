@@ -250,7 +250,7 @@ footer{
 #profilestacy {
     display: none;
     height: 1000px;
-    width: auto;
+    width: 1700px;
     
 }
 
@@ -502,18 +502,15 @@ b {
  
    
   div {
-    font-size: 50px;
+    
      margin: 0;
       margin-top: 20px;
       margin-bottom: 20px;
-      max-width: 750px;
+      max-width: 500px;
       align-content: center;
       overflow: hidden;
   }
-     p {
-    font-size: 50px;
     
-    }
  
 
   .catbiopic img{
