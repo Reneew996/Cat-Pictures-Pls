@@ -514,13 +514,20 @@ b {
      
   }
   
-  
+  .catbiopic img {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    margin: 0;
+}
 
-  .catbiopic img{
-   
-      width: 500px;
+.catbiopic p {
+    width: 100%;
     
-  }
+     text-align: left;
+    float: left;
+   
+}
 
     header {
         font-size: 10vw;
