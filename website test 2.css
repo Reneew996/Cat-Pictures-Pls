@@ -438,7 +438,7 @@ b {
     opacity: 1;
     border: none;
     
-    visibility: visible;
+    
     
     
     
@@ -515,7 +515,7 @@ b {
   }
     
   #reload {
-    visibility: hidden;
+    opacity: 0;
     
     }
 
