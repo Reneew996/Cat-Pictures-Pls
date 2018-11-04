@@ -249,8 +249,8 @@ footer{
 
 #profilestacy {
     display: none;
-    width: 1000px;
-    height: auto;
+    height: 1000px;
+    
 }
 
 
@@ -428,7 +428,7 @@ b {
 #reload {
     position: fixed;
     width: 100px;
-   left: 50px;
+   left: 10px;
     margin: 20px;
     color: #00F7CE;
     display: none;
